@@ -37,7 +37,7 @@ router.post("/", async (req, res) => {
 });
 
 router.post("/new", async (req, res) => {
-  console.log(req.body);
+  console.log(req.body.massage);
 });
 
 router.get("/alltasks", async (req, res) => {
@@ -72,3 +72,33 @@ router.post("/:id", async (req, res) => {
 });
 
 module.exports = router;
+
+{"type":"message_action",
+"token":"38A6DzexG3ugR9LOGfVKGChI",
+"action_ts":"1568976433.531558",
+"team": {
+  "id":"TNGMJFP96",
+  "domain":"taskjs"
+},
+"user":{
+  "id":"UN57LGWMR",
+  "name":"9_panfilov_8"
+},
+"channel":{
+  "id":"DNGMJG76C",
+  "name":"directmessage"
+},
+"callback_id":"subbmit",
+"trigger_id":"769249594775.764732533312.421b67d162031bbe6b54eadc0b36482c",
+"message_ts":"1568974749.000300",
+"message":{
+  "client_msg_id":"3511dc4c-5464-4ec4-8fd5-af0a28f12d75",
+  "type":"message",
+  "text":"Need rebot desctop",
+  "user":"UN57LGWMR",
+  "ts":"1568974749.000300",
+  "team":"TNGMJFP96"
+},
+"response_url":"https:\\/\\/hooks.slack.com\\/app\\/TNGMJFP96\\/760975299185\\/60ZuDvOtkFmqeF0OC1OLlJEs"
+}
+
