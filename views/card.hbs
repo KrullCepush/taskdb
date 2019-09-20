@@ -1,0 +1,17 @@
+<div id="contant-task" class="container">
+    <div class="wrap-task-div row">
+        {{#each Task}}
+        <div class="col-xl-12">
+            <div class="wrap-task tasklink {{this.priority}}">
+                <div class="h3">{{this.taskName}}</div>
+                <div class="h4">{{this.taskDescription}}</div>
+                <div class="h4">{{this.executor}}</div>
+            </div>
+        </div>
+        <form action="/{{this.id}}" method="POST" class="ml-5">
+            <input name="name" type="text" placeholder="You Name">
+            <input class="btn btn-primary" type="submit">
+        </form>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.navigation li {
+  display: block;
+}
+
+.wrap-task-div {
+  margin-top: 40px;
+}
+
+.wrap-task-div a {
+  color: black;
+  text-decoration: none;
+}
+
+.wrap-task-div a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.tasklink {
+  position: relative;
+}
+
+.tasklink div {
+  margin-top: 10px;
+}
+
+.tasklink div:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.wrap-task {
+  margin: 20px 30px;
+  padding: 10px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.First {
+  background-color: rgba(61, 227, 79, 0.7);
+}
+
+.Second {
+  background-color: rgba(230, 212, 50, 0.8);
+}
+
+.Third {
+  background-color: rgba(227, 38, 48, 0.8);
+}

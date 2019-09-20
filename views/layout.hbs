@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="bg-dark container-fluid">
+      <div class="container">
+        <div class="wrap row p-3">
+          <div class=" col-xl-4">
+            <a class="text-light h3" href="/">TaskManager</a>
+          </div>
+          <ul class="navigation col-xl-8 row">
+            <li class="col-xl-3 h4 text-center"><a class="text-light" href="/alltasks">Все задачи</a></li>
+            <li class="col-xl-3 h4 text-center"><a class="text-light" href="/endtasks">Завершенные</a></li>
+            <li class="col-xl-3 h4 text-center"><a class="text-light" href="/activetasks">Активные</a></li>
+            <li class="col-xl-3 h4 text-center"><a class="text-light" href="/inactivetasks">Непринятые</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container" id="cont">
+      <div class="row">
+        <button id="sort3" class="mx-auto col-xl-3 my-3 mx-3 btn btn-danger">Сделать срочно</button>
+        <button id="sort2" class="mx-auto col-xl-3 my-3 mx-3 btn btn-warning">Необходимо сделать</button>
+        <button id="sort1" class="mx-auto col-xl-3 my-3 mx-3 btn btn-primary">Сделать по возможности</button>
+      </div>
+    </div>
+    {{{body}}}
+  </main>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

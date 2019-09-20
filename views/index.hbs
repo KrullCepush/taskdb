@@ -1,0 +1,15 @@
+<div id="contant-task" class="container">
+    <div class="wrap-task-div row">
+        {{#each Task}}
+        <div class="col-xl-4">
+            <a href="/{{this._id}}">
+                <div class="wrap-task tasklink {{this.priority}}">
+                    <div class="h3">{{this.taskName}}</div>
+                    <div class="h4">{{this.taskDescription}}</div>
+                    <div class="h4">{{this.executor}}</div>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>
