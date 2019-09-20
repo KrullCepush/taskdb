@@ -37,9 +37,8 @@ router.post("/", async (req, res) => {
 });
 
 router.post("/new", async (req, res) => {
-  console.log(req.body.payload.message);
-
-  console.log(req.body.payload.json({ message: {} }));
+  const json = await JSON.parse(req.body.payload);
+  console.log(json.message);
 });
 
 router.get("/alltasks", async (req, res) => {
