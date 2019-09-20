@@ -37,12 +37,13 @@ router.post("/", async (req, res) => {
 });
 
 router.post("/new", async (req, res) => {
-  const json = await JSON.parse(JSON.stringify(req.body.payload));
+  const json = await JSON.parse(req.body.payload);
   const jsonParse = json.message.text;
   console.log("Json: ", json);
   console.log("Json text: ", jsonParse);
-  // const array = jsonParse[0].split("\\n");
-  // console.log(array);
+  const array = jsonParse.split("\\n");
+  console.log(array[0]);
+  console.log(array[1]);
 });
 
 router.get("/alltasks", async (req, res) => {
