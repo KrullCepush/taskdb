@@ -21,7 +21,6 @@ const hbs = handlebars.create({
 });
 
 mongoose.connect(uri, { useNewUrlParser: true });
-const db = mongoose.connection;
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

@@ -36,6 +36,10 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.post("/new", async (req, res) => {
+  console.log(req.body);
+});
+
 router.get("/alltasks", async (req, res) => {
   res.redirect("/");
 });

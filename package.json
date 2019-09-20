@@ -6,8 +6,10 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@slack/client": "^5.0.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^8.1.0",
     "express": "~4.16.0",
     "express-handlebars": "^3.1.0",
     "hbs": "~4.0.1",
