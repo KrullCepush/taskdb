@@ -43,6 +43,7 @@ router.post("/new", async (req, res) => {
   console.log("jsonParse : ", jsonParse);
   console.log("array : ", array);
   for (let index = 0; index < array.length; index++) {
+    array[index].split(": ");
     console.log(array[index]);
   }
 });
