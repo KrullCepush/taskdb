@@ -40,15 +40,17 @@ router.post("/new", async (req, res) => {
   const json = await JSON.parse(req.body.payload);
   const jsonParse = json.message.text;
   const array = jsonParse.split(",");
-  console.log("jsonParse : ", jsonParse);
-  console.log("array : ", array);
   const obj = {};
   for (let index = 0; index < array.length; index++) {
     let split = array[index].split(":");
     obj[split[0].trim()] = split[1].trim();
-
-    console.log(obj);
   }
+  const saveTask = new Task({
+    taskName: obj.title,
+    taskDescription: obj.desc,
+    priority: obj.priority
+  });
+  await saveTask.save();
 });
 
 router.get("/alltasks", async (req, res) => {
