@@ -39,8 +39,9 @@ router.post("/", async (req, res) => {
 router.post("/new", async (req, res) => {
   const json = await JSON.parse(req.body.payload);
   const jsonParse = json.message.text;
-  console.log(jsonParse);
-  const array = jsonParse.split("\\n");
+  console.log(1, jsonParse);
+  console.log(2, jsonParse[0]);
+  const array = jsonParse[0].split("\\n");
   console.log(array);
 });
 
