@@ -51,6 +51,8 @@ router.post("/new", async (req, res) => {
     priority: obj.priority
   });
   await saveTask.save();
+  res.json(status.ok);
+  res.redirect("/");
 });
 
 router.get("/alltasks", async (req, res) => {
