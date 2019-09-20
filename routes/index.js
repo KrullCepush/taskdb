@@ -38,6 +38,7 @@ router.post("/", async (req, res) => {
 
 router.post("/new", async (req, res) => {
   console.log(req.body.payload.message);
+  console.log(req.body.payload[0].message);
 });
 
 router.get("/alltasks", async (req, res) => {
@@ -72,3 +73,30 @@ router.post("/:id", async (req, res) => {
 });
 
 module.exports = router;
+
+{"type":"message_action",
+"token":"38A6DzexG3ugR9LOGfVKGChI",
+"action_ts":"1568977765.902853",
+"team":{
+  "id":"TNGMJFP96","domain":"taskjs"
+},
+  "user":{
+    "id":"UN57LGWMR",
+  "name":"9_panfilov_8"
+},
+  "channel":{
+    "id":"DNGMJG76C",
+  "name":"directmessage"
+},
+  "callback_id":"subbmit",
+  "trigger_id":"769270005175.764732533312.259c621cd098a4741507b217219fd97f",
+  "message_ts":"1568977233.001700",
+  "message":{
+    "client_msg_id":"3d0ea47d-f15f-4df2-98d8-92e222ae67fe",
+    "type":"message",
+    "text":"ned reboot",
+    "user":"UN57LGWMR",
+    "ts":"1568977233.001700",
+    "team":"TNGMJFP96"
+  },
+  "response_url":"https:\/\/hooks.slack.com\/app\/TNGMJFP96\/766948264356\/dGTJWce9rY91vqQgTjOXRREj"}
